@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranunculus</title>
+    <style>
+      span {
+        color: #d87e8c;
+      }
+      body {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+      }
+      h1 {
+        background-color: #8f6062;
+        border: 1px solid #8f6062;
+        border-radius: 5px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        padding: 5px;
+        text-align: center;
+      }
+      h2 {
+        color: #8f6062;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      ul {
+        border: 1px solid #d87e8c;
+        border-radius: 5px;
+        color: #d87e8c;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        list-style: none;
+        line-height: 30px;
+      }
+      li {
+        display: inline;
+        padding: 0 70px 0 0;
+      }
+      img {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 100%;
+      }
+      p {
+        border: 1px solid #8f6062;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin-top: 30px;
+        padding: 10px;
+      }
+      a.wikipedia {
+        color: #8f6062;
+        font-size: 13px;
+        text-decoration: none;
+      }
+      a.list {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #d87e8c;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        background-color: #8f6062;
+        border: 1px solid #8f6062;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        display: block;
+        font-family: monospace;
+        font-size: 25px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        padding: 10px 30px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: #d87e8c;
+        border: 1px solid #d87e8c;
+        cursor: pointer;
+        opacity: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I <span>❤</span> flowers</h1>
+    <h2>My favorite flower is Ranunculus</h2>
+    <ul>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Ranunculus#Description"
+          target="blank"
+          class="list"
+          >description</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.homesandgardens.com/advice/how-to-grow-ranunculus"
+          target="blank"
+          class="list"
+          >how to grow</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.pinterest.com/Heembloemex/ranunculus-inspiration/"
+          target="blank"
+          class="list"
+          >inspiration</a
+        >
+      </li>
+    </ul>
+    <img
+      src="https://cdn.shopify.com/s/files/1/2048/8041/products/La_Belle_Champagne_Ranunculus-9651_768x.jpg?v=1624296882"
+      alt="Ranunculus"
+    />
+    <p>
+      <strong>Ranunculus</strong> is a large genus of about 600 species of
+      flowering plants in the family Ranunculaceae. Members of the genus are
+      known as buttercups, spearworts and water crowfoots. The familiar and
+      widespread buttercup of gardens throughout Northern Europe (and introduced
+      elsewhere) is the creeping buttercup Ranunculus repens, which has
+      extremely tough and tenacious roots. Two other species are also
+      widespread, the bulbous buttercup Ranunculus bulbosus and the much taller
+      meadow buttercup Ranunculus acris. <em>Buttercups</em> usually flower in
+      the spring, but flowers may be found throughout the summer, especially
+      where the plants are growing as opportunistic colonizers, as in the case
+      of garden weeds
+      <br />
+      <a
+        href
+        class="wikipedia"
+        ="https://en.wikipedia.org/wiki/Ranunculus"
+        target="blank"
+        >Read more on Wikipedia</a
+      >
+    </p>
+
+    <button>Fall in love with Ranunculus</button>
+    <script>
+      function getRanunculus() {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert(`Thanks, ${name}! I'm sure you definitely like ranunculus!`);
+        } else {
+          alert(`No name, no game 😊`);
+        }
+      }
+
+      let buttonRanunculus = document.querySelector("button");
+      buttonRanunculus.addEventListener("click", getRanunculus);
+    </script>
+  </body>
+</html>
